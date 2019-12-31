@@ -1,0 +1,15 @@
+{
+  "name": "@m1yh3m/base.64.encode.node.lib",
+  "version": "1.0.0",
+  "description": "",
+  "main": "encode.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@m1yh3m/base.64.table.node.lib": "^2.0.0"
+  }
+}
