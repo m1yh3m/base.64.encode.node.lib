@@ -14,6 +14,7 @@ function tests() {
   runTest('encode', encode('bb'), 'YmI=', 'encode() should properly work')
   runTest('encode', encode('b'), 'Yg==', 'encode() should properly work')
   runTest('encode', encode(''), '', 'encode() should properly work')
+  runTest('encode', encode("Hello World"), 'SGVsbG8gV29ybGQ=', 'encode() should properly work')
 
   console.log('\nDONE!')
   errors.length > 0 && console.log(errors)

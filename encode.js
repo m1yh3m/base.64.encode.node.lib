@@ -1,5 +1,14 @@
 const { charForBinary } = require('@m1yh3m/base.64.table.node.lib')
 
+/**
+ * Encodes a string to base64
+ * @param {string} input - The string to encode
+ * @returns {string} - The base64 encoded string
+ * @example
+ * const encode = require('encode')
+ * const encoded = encode('Hello World')
+ * console.log(encoded) // SGVsbG8gV29ybGQ=
+ * */
 function encode(input /* string */) {
   // const words = tokenify(input, 3)
 
@@ -21,6 +30,16 @@ function encode(input /* string */) {
   return padded
 }
 
+/**
+ * Tokenify a string
+ * @param {string} str - The string to tokenify
+ * @param {number} count - The number of characters in each token
+ * @returns {string[]} - The tokenified string as an array
+ * @example
+ * const tokenify = require('encode').tokenify
+ * const tokens = tokenify('Hello World', 3)
+ * console.log(tokens) // ['Hel', 'lo ', 'Wor', 'ld']
+ * */
 function tokenify(str, count) {
   const length = str.length
   const out = []
@@ -30,4 +49,5 @@ function tokenify(str, count) {
   return out
 }
 
-module.exports = encode
+module.exports = encode;
+
