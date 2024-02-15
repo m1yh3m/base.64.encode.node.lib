@@ -8,7 +8,7 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "@m1yh3m/base.64.table.node.lib": "^2.0.0"
   }
